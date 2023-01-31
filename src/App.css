@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  top: 20px;
+  position: relative;
+  border-style: solid;
+  border-width: 0.6;
+  width: auto;
+  height: 500px;
+
+}
+
+tr {
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+td {
+  width: 70px;
+  height: 70px;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #f45b1e;
+  border: none;
+  color: white;
+  padding: 36px 52px;
+  text-align: center;
+  font-size: 3rem;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  box-shadow: 0 0 20px 20px #ff3c00 inset, 0 0 0 0 #ff3c00;
+}
+
+.btn-restart {
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  transform: translate(-50%, 0);
+  background-color: #1edbf4;
+  border: none;
+  color: white;
+  padding: 36px 52px;
+  text-align: center;
+  font-size: 3rem;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.btn-restart:hover {
+  background-color: transparent;
+  box-shadow: 0 0 20px 20px #1e9ef4 inset, 0 0 0 0 #1e9ef4;
+}
+
+
+/*  #Mobile 
+================================================== */
+@media only screen and (max-device-width: 480px) {
+  td {
+    width: 50px;
+    height: 50px;
+  }
+  tr{
+    font-size: 0.5rem;
+  }
+  .btn-restart {
+    padding: 16px 32px;
+    bottom: 10px;
+  }
+}
